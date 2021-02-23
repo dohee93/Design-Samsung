@@ -1,0 +1,251 @@
+/* Main CSS */
+
+.main_container {
+   width: 100%;
+   min-height: calc(100vh - 61px);
+}
+
+/* Hero Video CSS */
+.hero {
+   width: 100%;
+   min-height: 33.28125%;
+   position: relative;
+}
+
+.hero a {
+   width: 100%;
+   display: block;
+}
+
+.hero_video_wrap {
+   width: 100%;
+   position: relative;
+   overflow: hidden;
+}
+
+.hero_video_wrap video {
+   width: 100%;
+}
+
+.hero_text_content {
+   width: 100%;
+   padding: 30px 3.75% 120px 3.75%;
+}
+
+.hero_text {
+   margin: 0 1.25vw;
+   position: relative;
+   letter-spacing: -0.015em;
+   line-height: 1;
+}
+
+.hero_text .hero_title {
+   font-size: 48px;
+   font-family: 'SamsungSharpSansMedium','SamsungOneKorean600';
+   color: rgb(0,0,0);
+}
+
+.hero_text .hero_desc {
+   font-size: 28px;
+   padding: 20px 0 0 0;
+   color: rgb(0,0,0);
+}
+
+.hero_date {
+   position: absolute;
+   top: 0;
+   right: 0;
+   font-size: 12px;
+   display: block;
+   color: rgb(102, 102, 102);
+}
+
+/* Main Content List CSS */
+
+.content_list {
+   position: relative;
+}
+
+.content_list li {
+   width: 30%;
+   padding: 0 0 80px 0;
+   margin: 0% 0.5%;
+   display: inline-block;
+   box-sizing: content-box;
+   vertical-align: top;
+}
+
+.content_list li:nth-child(3n+1) {
+   margin-left: 3.75%;
+}
+
+.content_list li:nth-child(3n+3) {
+   margin-right: 3.75%;
+}
+
+/* Main Cotent Text CSS */
+
+.content_list li dl {
+   position: relative;
+   padding: 56.25% 0 0 0 ;
+}
+
+.content_list li dl dt.title {
+   font-size: 30px;
+   line-height: 1.2;
+   padding: 26px 1.25vw 0 1.25vw;
+   font-family: 'SamsungSharpSansMedium', 'samsungonelatin600', 'SamsungOneKorean600';
+   letter-spacing: -0.02em;
+   text-align: left;
+}
+
+.content_list li dl dd.desc {
+   font-size: 18px;
+   line-height: 1.22222;
+   padding: 14px 1.25vw 0 1.25vw;
+   font-family: 'samsungonelatin400', 'SamsungOneKorean400';
+   letter-spacing: -0.02em;
+}
+
+.content_list li dl dd.date {
+   font-size: 12px;
+   line-height: 1;
+   padding: 18px 1.25vw 0 1.25vw;
+   color: rgb(102, 102, 102);
+}
+
+/* Main Cotent Image CSS */
+
+.content_list li dl dd.img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding-top: inherit;
+  overflow: hidden;
+}
+
+.content_list li dl dd.img a {
+   display: block;
+   position: absolute;
+   width: 100%;
+   padding-top: inherit;
+   top: 0;
+}
+
+.content_list li dl dd.img .item {  
+   position: absolute;
+   left: 0;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   width: 100%;
+}
+
+.content_list li dl dd.img .content1 {
+   background-image: url(../img/ctgbnr_sound-design-2021.jpg);
+}
+
+.content_list li dl dd.img .content2 {
+   background-image: url(../img/news_archive_20201224.png);
+}
+
+.content_list li dl dd.img .content3 {
+   background-image: url(../img/ctgbnr_season-greeting2.jpg);
+}
+
+.content_list li dl dd.img .content4 {
+   background-image: url(../img/ctgbnr_awards13.jpg);
+}
+
+.content_list li dl dd.img .content5 {
+   background-image: url(../img/ctgbnr_sdm.jpg);
+}
+
+.content_list li dl dd.img .content6 {
+   background-image: url(../img/ctgbnr_the-premiere1.jpg);
+}
+
+.content_list li dl dd.img .content7 {
+   background-image: url(../img/ctgbnr_bespoke-cube.jpg);
+}
+
+.content_list li dl dd.img .content8 {
+   background-image: url(../img/ctgbnr_designer-interview-2.jpg);
+}
+
+.content_list li dl dd.img .content9 {
+   background-image: url(../img/ctgbnr_empowering-future-02.jpg);
+}
+
+.content_list li dl dd.img .content10 {
+   background-image: url(../img/ctgbnr_empowering-future-01.jpg);
+}
+
+.content_list li dl dd.img .content11 {
+   background-image: url(../img/ctgbnr_empowering-future.jpg);
+}
+
+.content_list li dl dd.img .content12 {
+   background-image: url(../img/20200916_news_archive.jpg);
+}
+
+.content_list li dl dd.img .content13 {
+   background-image: url(../img/ctgbnr_galaxy-z-fold2.jpg);
+}
+
+.content_list li dl dd.img .content14 {
+   background-image: url(../img/ctgbnr_bespoke_family_hub.jpg);
+}
+
+.content_list li dl dd.img .content15 {
+   background-image: url(../img/ctgbnr_new-normal.jpg);
+}
+
+.content_list li dl dd.img .content16 {
+   background-image: url(../img/ctgbnr_news_023.jpg);
+}
+
+.content_list li dl dd.img .content17 {
+   background-image: url(../img/ctgbnr_odyssey-monitor.jpg);
+}
+
+.content_list li dl dd.img .content18 {
+   background-image: url(../img/ctgbnr_blue-story.jpg);
+}
+
+/* Main - Bottom More CSS */
+
+.btn_area {
+   padding: 0 3.7% 46px 3.7%;
+   text-align: center;
+}
+
+.btn_more {
+   display: inline-block;
+   position: relative;
+   overflow: hidden;
+}
+
+.btn_more .line {
+   height: 30px;
+   display: block;
+   overflow: hidden;
+}
+
+.btn_more .line:before {
+   position: absolute;
+   display: block;
+   content: '';
+   height: 100%;
+   left: 50%;
+   height: 30px;
+   border-left: 1px solid #000;
+}
+
+.btn_more .text {
+   font-size: 18px;
+   margin: 10px 40px;
+   display: block;
+   letter-spacing: 0.06em;
+}

@@ -1,0 +1,165 @@
+/* Header CSS */
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: rgb(255,255,255);
+}
+
+.header_upper {
+   position: relative;
+}
+
+/* Header - Logo CSS */
+
+.logo_box {
+   position: absolute;
+   top: 19px;
+   left: 3.75%;
+}
+
+.logo {
+   width: 230px;
+   height: 31px;
+   display: block;
+   background-image: url(../img/logo_samsung_design@x2.png);
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   background-size: contain;
+}
+
+/* Header - Slogan CSS */
+.slogan_box {
+   width: 100%;
+   padding : 23px 0 10px;
+   display: block;
+   text-align: center;
+}
+
+.slogan {
+   width: 368px;
+   height: 24px;
+   display: inline-block;
+   background-image: url(../img/txt_slogan@x2.png);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: 100% auto;
+}
+
+/* Header - Utility CSS */
+
+.util_box {
+   position: absolute;
+   top: 26px;
+   right: 3.75%;
+}
+
+.util_box .search {
+   position: absolute;
+   top: 0;
+   right: 60px;
+   height: 20px;
+}
+
+.util_box .search a {
+   width: 20px;
+   height: 20px;
+   display: block;
+   background-image: url(../img/icon_search.png);
+   background-repeat: no-repeat;
+}
+
+.util_box .lang {
+   width: 33px;
+   display: inline-block;
+   vertical-align: top;
+}
+
+.util_box .lang:before {
+   width: 18px;
+   height: 18px;
+   display: inline-block;
+   content: '';
+   float: left;
+   background-image: url(../img/icon_lang.png);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: 100% auto;
+}
+
+.util_box .lang:after {
+   width: 5px;
+   height: 3px;
+   margin: 9px 0 0 0;
+   display: inline-block;
+   content: '';
+   background-image: url(../img/icon_arrow.png);
+   float: right;
+   background-position: 0 0;
+   background-repeat: no-repeat;
+   background-size: 100% auto;
+}
+
+/* Header - Category CSS */
+
+.header_lower {
+   padding: 26px 0 0 0;
+   width: 650px;
+   position: relative;
+   margin: 0 auto;
+   display: block;
+   background-color: rgb(255,255,255);
+}
+
+.category_box {
+   height: 36px;
+   font-family: 'SamsungOneKorean700';
+   display: flex;
+   justify-content: center;
+   letter-spacing: 0.04em;
+}
+
+.header_lower ul {
+   font-size: 18px;
+   line-height: 1;
+}
+
+.header_lower ul li {
+   margin: 0 30px;
+   display: inline-block;
+   position: relative;
+}
+
+.category_box a {
+   color: rgb(0,0,0);
+}
+
+/* 위로 이동하는 버튼 생성하려다가 실패했어요,,;( */
+
+/* .btn_main_top span {
+   display: block;
+   position: relative;
+   width: 70px;
+   padding-top: 70px;
+   background-color: rgba(248,248,248,0.8);
+   border: 1px solid red;
+}
+
+.btn_main_top span:before {
+   margin-left: -3px;
+   width: 6px;
+   display: block;
+   content: '';
+   background-image: url(../img/icon_top.png);
+   position: absolute;
+   left: 50%;
+   top: 0;
+   height: 100%;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 100% auto;
+} */
