@@ -1,13 +1,13 @@
 /* Header CSS */
 
-header {
+.header_wrap {
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 9999;
-  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255,0.8);
 }
 
 .header_upper {
@@ -36,7 +36,7 @@ header {
 .slogan_box {
    width: 100%;
    padding : 23px 0 10px;
-   display: block;
+   /* display: block; */
    text-align: center;
 }
 
@@ -112,15 +112,14 @@ header {
    position: relative;
    margin: 0 auto;
    display: block;
-   background-color: rgb(255,255,255);
 }
 
 .category_box {
    height: 36px;
-   font-family: 'SamsungOneKorean700';
+   
    display: flex;
    justify-content: center;
-   letter-spacing: 0.04em;
+   
 }
 
 .header_lower ul {
@@ -134,19 +133,28 @@ header {
    position: relative;
 }
 
-.category_box a {
+.category_box li a span {
    color: rgb(0,0,0);
+   font-family: 'SamsungOneKorean700';
+   letter-spacing: 0.04em;
+   font-weight: 100;
 }
 
-/* 위로 이동하는 버튼 생성하려다가 실패했어요,,;( */
+.btn_main_top {
+   width: 70px;
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   margin: 0 1.25% 1.25% 0;
+   z-index: 9999;
+}
 
-/* .btn_main_top span {
+.btn_main_top span {
    display: block;
    position: relative;
    width: 70px;
    padding-top: 70px;
    background-color: rgba(248,248,248,0.8);
-   border: 1px solid red;
 }
 
 .btn_main_top span:before {
@@ -162,4 +170,5 @@ header {
    background-repeat: no-repeat;
    background-position: center center;
    background-size: 100% auto;
-} */
+}
+

@@ -8,8 +8,7 @@
 /* Hero Video CSS */
 .hero {
    width: 100%;
-   min-height: 33.28125%;
-   position: relative;
+   /* padding-top: 130px; */
 }
 
 .hero a {
@@ -20,11 +19,16 @@
 .hero_video_wrap {
    width: 100%;
    position: relative;
-   overflow: hidden;
+   padding-top: 33.28125%;
+   display: block;
 }
 
 .hero_video_wrap video {
    width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
 }
 
 .hero_text_content {
@@ -35,7 +39,6 @@
 .hero_text {
    margin: 0 1.25vw;
    position: relative;
-   letter-spacing: -0.015em;
    line-height: 1;
 }
 
@@ -43,12 +46,14 @@
    font-size: 48px;
    font-family: 'SamsungSharpSansMedium','SamsungOneKorean600';
    color: rgb(0,0,0);
+   letter-spacing: -0.015em;
 }
 
 .hero_text .hero_desc {
    font-size: 28px;
    padding: 20px 0 0 0;
    color: rgb(0,0,0);
+   letter-spacing: -0.015em;
 }
 
 .hero_date {
@@ -56,8 +61,10 @@
    top: 0;
    right: 0;
    font-size: 12px;
+   line-height: 1;
    display: block;
    color: rgb(102, 102, 102);
+   font-family: 'samsungonelatin400', 'SamsungOneKorean400';
 }
 
 /* Main Content List CSS */
@@ -131,6 +138,12 @@
    width: 100%;
    padding-top: inherit;
    top: 0;
+}
+
+.item figure:hover {
+   transition: transform 1s 0s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 1s;
+   transform: translateY(0%) scale(1.1, 1.1);
+   transform-origin: 50% 100%;
 }
 
 .content_list li dl dd.img .item {  
@@ -212,6 +225,18 @@
 
 .content_list li dl dd.img .content18 {
    background-image: url(../img/ctgbnr_blue-story.jpg);
+}
+
+
+.mod-covered-bg {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 /* Main - Bottom More CSS */
