@@ -1,0 +1,35 @@
+.footer_wrap {
+   height: 61px;
+   position: relative;
+   width: 100%;
+   background-color: rgb(255,255,255);
+}
+
+.footer {
+   font-family: 'samsungonelatin700';
+   font-size: 14px;
+   line-height: 1;
+   padding: 24px 3.75% 0 3.75%;
+   color: rgb(136,136,136);
+   
+}
+
+.samsung_logo {
+   display: inline-block;
+   margin: 0 14px 0 0;
+   height: 14px;
+   width: 91px;
+   vertical-align: bottom;
+   background-image: url(../img/logo_samsung_foot.png);
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   background-size: 100% auto;
+}
+
+.info a {
+   font-family: 'SamsungOneKorean400';
+   text-decoration: underline;
+   color: rgb(136,136,136);
+   font-size: 14px;
+   letter-spacing: -1px;
+}
