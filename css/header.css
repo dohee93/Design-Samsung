@@ -198,22 +198,22 @@
    }
 
    .util_box .search {
-      height: 35px;
-      right: 75.7px;
+      height: 4.93333vw;
+      right: 10.66667vw;
    }
 
    .util_box .search a {
       width: 4.9vw;
       height: 4.8vw;
       background-image: url(../img/icon_search_m@x2.png);
-      background-position: center center;
-      background-size: cover;
+      background-position: 0 50%;
+      background-size: 100% auto;
    }
 
-   .util_box .menu {
+   .util_box .util_menu {
       background-image: url(../img/icon_mobile_menu@x2.png);
-      width: 36px;
-      height: 36px;
+      width: 4.8vw;
+      height: 4.8vw;
       background-repeat: no-repeat;
       background-position: 0 50%;
       background-size: 100% auto;
