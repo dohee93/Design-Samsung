@@ -8,11 +8,12 @@
 /* Hero Video CSS */
 .hero {
    width: 100%;
-   /* padding-top: 130px; */
+   padding-top: 130px;
 }
 
 .hero a {
    width: 100%;
+   height: 100%;
    display: block;
 }
 
@@ -29,6 +30,16 @@
    position: absolute;
    top: 0;
    left: 0;
+   display: block;
+}
+
+.hero_video {
+   width: 100%;
+   height: 640px;
+}
+
+.hero_video_m {
+   display: none;
 }
 
 .hero_text_content {
@@ -74,7 +85,7 @@
 }
 
 .content_list li {
-   width: 30%;
+   width: 29.9%;
    padding: 0 0 80px 0;
    margin: 0% 0.5%;
    display: inline-block;
@@ -264,7 +275,6 @@
    content: '';
    height: 100%;
    left: 50%;
-   height: 30px;
    border-left: 1px solid #000;
 }
 
@@ -274,3 +284,186 @@
    display: block;
    letter-spacing: 0.06em;
 }
+
+@media only screen and (max-width: 767.7px){
+   .hero {
+      padding-top: 12.8vw;
+      min-height: 100vh;
+   }
+
+   .hero_text_content {
+      padding: 9.06667% 4% 20% 4%;
+   }
+
+   .hero_text {
+      margin: 0vw 4vw;
+   }
+
+   .hero_text .hero_title {
+      font-size: 10.66667vw;
+      line-height: 1.15;
+      letter-spacing: 0;
+   }
+
+   .hero_text .hero_desc {
+      padding-top: 3.73333vw;
+      font-size: 4.8vw;
+      line-height: 1.16667;
+      letter-spacing: 0;
+   }
+
+   .hero_text .hero_date {
+      position: static;
+      padding-top: 5.06667vw;
+      font-size: 3.73333vw;
+      line-height: 1;
+   }
+
+   .hero_video_wrap {
+      padding-top: 100%;
+   }
+
+   .hero_video_wrap video {
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+   }
+
+   .hero_video {
+      display: none;
+   }
+
+   .content_list_wrap {
+      padding-top: 6.66667vw;
+   }
+
+   .content_list_wrap .content_list li:nth-child(3n+1) {
+      margin-left: 4%;
+   }
+
+   .content_list_wrap .content_list li {
+      display: block;
+      width: 92%;
+      margin: 0 4%;
+      padding-bottom: 26.13333vw;
+   }
+
+   .content_list_wrap .content_list li:nth-child(3n+3) {
+      margin-right: 4%;
+   }
+
+   .content_list li dl dt.title {
+      padding: 6.93333vw 4vw 0vw;
+      font-size: 7.46667vw;
+      line-height: 1.14286;
+   }
+
+   .content_list li dl dd.desc {
+      padding: 2.66667vw 4vw 0vw;
+      font-size: 4.8vw;
+      line-height: 1.33333;
+   }
+
+   .content_list li dl dd.date {
+      padding: 2.66667vw 4vw 0vw;
+      font-size: 3.73333vw;
+   }
+
+   .btn_area {
+      padding: 0 4% 20vw;
+   }
+
+   .btn_more .line:before {
+      height: 40px;
+   }
+   
+   .btn_more .text {
+      font-size: 3.73333vw;
+      margin: 2.66667vw 5.33333vw;
+      color: black;
+   }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+   
+   .main_container {
+      min-height: calc(100vh - (61*100 / 1280 * 1vw));
+   }
+
+   .hero {
+      padding-top: 10.15625vw;
+   }
+
+   .hero_text_content {
+      padding: 2.34375vw 3.75% 9.375vw 3.75%;
+   }
+
+   .hero_text {
+      margin: 0vw 1.25vw;
+   }
+
+   .hero_text .hero_title {
+      font-size: 3.75vw;
+      line-height: 1;
+      letter-spacing: -0.015em;
+   }
+
+   .hero_text .hero_desc {
+      padding-top: 1.5625vw;
+      font-size: 2.1875vw;
+      line-height: 1;
+      letter-spacing: -0.015em;
+   }
+
+   .hero_text .hero_date {
+      font-size: 0.9375vw;
+      line-height: 1;
+   }
+
+   .content_list li {
+      padding: 0 0 6.25vw 0;
+   }
+  
+   .content_list li dl dt.title {
+      font-size: 2.34375vw;
+      line-height: 1.2;
+      padding: 2.03125vw 1.25vw 0 1.25vw;
+   }
+
+   .content_list li dl dd.desc {
+      font-size: 1.40625vw;
+      line-height: 1.22222;
+      padding: 1.09375vw 1.25vw 0 1.25vw;
+   }
+
+   .content_list li dl dd.date {
+      font-size: 0.9375vw;
+      line-height: 1;
+      padding: 1.40625vw 1.25vw 0 1.25vw;
+   }
+
+   .btn_area {
+      padding: 0 3.75% 3.59375vw 3.75%;
+   }
+
+   .btn_more .line {
+      height: 2.34375vw;
+   }
+   
+   .btn_more .line:before {
+      height: 2.34375vw;
+   }
+   
+   .btn_more .text {
+      font-size: 1.40625vw;
+      margin: 0.78125vw 3.125vw;
+   }
+
+}
+
+
+
+   

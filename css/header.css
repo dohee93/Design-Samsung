@@ -1,18 +1,21 @@
 /* Header CSS */
 
 .header_wrap {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-  background-color: rgba(255,255,255,0.8);
+   width: 100%;
+   height: 70px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 9999;
 }
 
-.header_upper {
-   position: relative;
+.header_wrap #header {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: rgb(255,255,255);
 }
+
 
 /* Header - Logo CSS */
 
@@ -36,7 +39,6 @@
 .slogan_box {
    width: 100%;
    padding : 23px 0 10px;
-   /* display: block; */
    text-align: center;
 }
 
@@ -106,38 +108,32 @@
 
 /* Header - Category CSS */
 
-.header_lower {
+.category-area-holder {
    padding: 26px 0 0 0;
    width: 650px;
    position: relative;
    margin: 0 auto;
    display: block;
+   text-align: center;
 }
 
-.category_box {
+.category-box {
    height: 36px;
-   
-   display: flex;
-   justify-content: center;
-   
 }
 
-.header_lower ul {
-   font-size: 18px;
-   line-height: 1;
-}
-
-.header_lower ul li {
+.category-area-holder ul li {
    margin: 0 30px;
    display: inline-block;
    position: relative;
 }
 
-.category_box li a span {
+.category-box li a span {
    color: rgb(0,0,0);
    font-family: 'SamsungOneKorean700';
    letter-spacing: 0.04em;
    font-weight: 100;
+   font-size: 18px;
+   line-height: 1;
 }
 
 .btn_main_top {
@@ -172,3 +168,171 @@
    background-size: 100% auto;
 }
 
+
+@media only screen and (max-width: 767.7px){
+   .header_wrap{
+      height:12.8vw;
+   }
+
+   .slogan_box {
+      display: none;
+   }
+
+   .category-area-holder {
+      display: none;
+   }
+
+   .logo_box {
+      top: 4vw;
+   }
+
+   .logo {
+      width: 42.26667vw;
+      height: 5.86667vw;
+   }
+   .util_box {
+      top: 28px;
+   }
+   .util_box .lang {
+      display: none;
+   }
+
+   .util_box .search {
+      height: 35px;
+      right: 75.7px;
+   }
+
+   .util_box .search a {
+      width: 4.9vw;
+      height: 4.8vw;
+      background-image: url(../img/icon_search_m@x2.png);
+      background-position: center center;
+      background-size: cover;
+   }
+
+   .util_box .menu {
+      background-image: url(../img/icon_mobile_menu@x2.png);
+      width: 36px;
+      height: 36px;
+      background-repeat: no-repeat;
+      background-position: 0 50%;
+      background-size: 100% auto;
+      display: inline-block;
+   }
+
+   .header_wrap .btn_main_top {
+      margin-bottom: 2vw;
+      margin-right: 2vw;
+      width: 12vw;
+   }  
+
+   .btn_main_top span {
+      display: block;
+      position: relative;
+      width: 100%;
+      padding-top: 100%;
+      background-color: rgba(248,248,248,0.8);
+   }
+
+   .header_wrap .btn_main_top span:before {
+      width: 1.06667vw;
+      margin-left: -.53333vw;
+      background-image: url(../img/icon_top_m.png);
+   }
+   
+}
+
+@media only screen and (min-width: 768px) {
+   .util_box .menu {
+      display: none;
+   }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+   .header_wrap {
+      height: 5.46875vw;
+   }
+
+   .logo_box {
+      top: 1.48438vw;
+   }
+
+   .logo {
+      width: 17.96875vw;
+      height: 2.42188vw;
+   }
+
+   .slogan_box {
+      padding-top: 1.79688vw;
+   }
+   
+   .slogan {
+      width: 28.75vw;
+      height: 1.875vw;
+   }
+
+   .util_box .search {
+      right: 4.6875vw;
+      height: 1.5625vw;
+   }
+
+   .util_box .search a {
+      width: 18px;
+      height: 18px;
+      background-size: 100% auto;
+   }
+
+   .util_box {
+      top: 2.03125vw;
+   }
+
+   .util_box .lang {
+      width: 2.57812vw
+   }
+   
+   .util_box .lang:before {
+      width: 1.40625vw;
+      height: 1.40625vw;
+   }
+   
+   .util_box .lang:after {
+      width: 0.39062vw;
+      height: 0.23438vw;
+      margin-top: 0.70312vw;
+   }
+
+   .category-area-holder {
+      width: 50.78125vw;
+   }
+
+   .category-box {
+      height: 2.8125vw;
+   }
+
+   .category-box li a span {
+      font-size: 1.40625vw;
+      line-height: 1;
+   }
+
+   .category-area-holder ul li {
+      margin: 0vw 2.34375vw;
+   }
+
+   .header_wrap .btn_main_top {
+      margin-bottom: 1.25%;
+      margin-right: 1.25%;
+      width: 5.46875vw;
+   }  
+
+   .btn_main_top span {
+      width: 100%;
+      padding-top: 100%;
+   }
+
+   .header_wrap .btn_main_top span:before {
+      width: .46875vw;
+      margin-left: -.23438vw;
+   }
+
+}
