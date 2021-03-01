@@ -191,8 +191,10 @@
       height: 5.86667vw;
    }
    .util_box {
-      top: 28px;
+      top: 4vw;
+      right: 4%;
    }
+
    .util_box .lang {
       display: none;
    }
