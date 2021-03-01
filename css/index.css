@@ -273,7 +273,7 @@
    position: absolute;
    display: block;
    content: '';
-   height: 100%;
+   height: 30px;
    left: 50%;
    border-left: 1px solid #000;
 }
@@ -372,10 +372,6 @@
 
    .btn_area {
       padding: 0 4% 20vw;
-   }
-
-   .btn_more .line:before {
-      height: 30px;
    }
    
    .btn_more .text {
