@@ -2,20 +2,25 @@
 
 .header_wrap {
    width: 100%;
-   height: 70px;
+   height: 70px;  
+}
+
+.header_wrap .header {
+   width: 100%;
    position: fixed;
    top: 0;
    left: 0;
    z-index: 9999;
-}
-
-.header_wrap #header {
-   position: absolute;
-   width: 100%;
-   height: 100%;
    background-color: rgb(255,255,255);
 }
 
+.header_wrap .open-bg{
+   position:absolute;
+   width:100%;
+   transition:transform .4s 0s cubic-bezier(0.215, 0.61, 0.355, 1);
+   top:0;
+   background-color:#fff;
+}
 
 /* Header - Logo CSS */
 
@@ -108,17 +113,43 @@
 
 /* Header - Category CSS */
 
-.category-area-holder {
-   padding: 26px 0 0 0;
-   width: 650px;
-   position: relative;
-   margin: 0 auto;
-   display: block;
-   text-align: center;
+.category-area-holder .category-box li .line {
+   bottom:0;
+   width:100%;
+   height:2px;
+   background-color: black;
+   transform: scaleX(0);
+   transition: transform 350ms ease-in-out;
 }
 
-.category-box {
-   height: 36px;
+.category-area-holder .category-box li:hover .line {
+   transform: scaleX(1);
+}
+
+.category-area-holder .category-box li .line .line-left {
+   right: 50%;
+}
+
+.category-area-holder .category-box li .line .line-right {
+   left: 50%;
+}
+
+.category_wrap {
+   display: block;
+}
+
+.category-area-holder {
+   position: sticky;
+   top: 0;
+   width: 650px;
+   margin: 0 auto;
+   padding: 26px 0 0;
+   background-color: rgb(255,255,255);
+   z-index: 9999999;
+}
+
+.category-box {   
+   height: 33px;
 }
 
 .category-area-holder ul li {
@@ -129,7 +160,7 @@
 
 .category-box li a span {
    color: rgb(0,0,0);
-   font-family: 'SamsungOneKorean700';
+   font-family: 'samsungonelatin700';
    letter-spacing: 0.04em;
    font-weight: 100;
    font-size: 18px;
@@ -168,10 +199,42 @@
    background-size: 100% auto;
 }
 
+/* .minify .header_wrap .open-bg{
+   transform:translateY(0%);
+   transition:transform .4s 0s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.minify .header_wrap .open-bg{
+   transform:translateY(0%);
+   transition:transform .5s 0s cubic-bezier(0.645, 0.045, 0.355, 1)
+}
+.minify .header_wrap .open-bg{
+   transform:translateY(-47%);
+   transition:transform .4s 0s cubic-bezier(0.645, 0.045, 0.355, 1)
+}
+.minify .header_wrap .header .slogan_box{
+   transform:scale(0.85);
+   transition:transform .4s 0s cubic-bezier(0.645, 0.045, 0.355, 1),opacity 0.3s;
+}
+.minify .header_wrap .header .category-area-holder{
+   transform:translateY(-100%);
+   transition:transform .4s 0s cubic-bezier(0.645, 0.045, 0.355, 1);
+}  */
+
+@media only screen and (min-width: 1281px){
+   .header_wrap .category-area-holder ul .line{
+      margin-top:3px;
+   }
+}
+
+
 
 @media only screen and (max-width: 767.7px){
    .header_wrap{
       height:12.8vw;
+   }
+
+   .header_wrap .open-bg{
+      height:0vw;
    }
 
    .slogan_box {
@@ -250,10 +313,26 @@
    }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 767.7px){
+   .header_wrap .open-bg{
+      height:17.33333vw;
+   }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 1281px){
+   .header_wrap .open-bg{
+      height:130px;
+   }
+}
 
 @media only screen and (min-width: 768px) and (max-width: 1280px) {
    .header_wrap {
       height: 5.46875vw;
+   }
+
+   .header_wrap .open-bg{
+      height:130px;
+      height:10.15625vw;
    }
 
    .logo_box {
@@ -280,8 +359,8 @@
    }
 
    .util_box .search a {
-      width: 18px;
-      height: 18px;
+      width: 1.5625vw;
+      height: 1.5625vw;
       background-size: 100% auto;
    }
 

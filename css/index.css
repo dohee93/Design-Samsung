@@ -8,7 +8,7 @@
 /* Hero Video CSS */
 .hero {
    width: 100%;
-   padding-top: 130px;
+   /* padding-top: 130px; */
 }
 
 .hero a {
@@ -143,6 +143,7 @@
   overflow: hidden;
 }
 
+
 .content_list li dl dd.img a {
    display: block;
    position: absolute;
@@ -151,11 +152,6 @@
    top: 0;
 }
 
-.item figure:hover {
-   transition: transform 1s 0s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 1s;
-   transform: translateY(0%) scale(1.1, 1.1);
-   transform-origin: 50% 100%;
-}
 
 .content_list li dl dd.img .item {  
    position: absolute;
@@ -239,7 +235,7 @@
 }
 
 
-.mod-covered-bg {
+.item figure {
    position: absolute;
    left: 0;
    top: 0;
@@ -249,6 +245,20 @@
    background-repeat: no-repeat;
    background-size: cover;
 }
+
+ .img a {
+   transition: transform 1s 0s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 1s;
+   transform: translateY(0%) scale(1, 1);
+ }
+
+ .item figure {
+   transition: transform 1s 0s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 1s;
+   transform: scale(1, 1);
+ }
+ 
+ .img a:hover .item figure {
+   transform: scale(1.1, 1.1);
+ }
 
 /* Main - Bottom More CSS */
 
@@ -266,6 +276,9 @@
 .btn_more .line {
    height: 30px;
    display: block;
+   transform-origin: center top;
+   transition: transform 1s 0s cubic-bezier(0.645, 0.045, 0.355, 1);
+   transform: translateY(-100%);
    overflow: hidden;
 }
 
@@ -276,6 +289,8 @@
    height: 30px;
    left: 50%;
    border-left: 1px solid #000;
+   transform-origin: center top;
+   transition: transform 0.5s 0s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .btn_more .text {
@@ -284,6 +299,31 @@
    display: block;
    letter-spacing: 0.06em;
 }
+
+.btn_more .line {
+   transform: translateY(0);
+}
+
+.btn_more:hover .line:before {
+   animation: ani-more-hover 1s forwards;
+ }
+
+ @keyframes ani-more-hover {
+    0% {
+       transform: translateY(0);
+    }
+    40% {
+       transform: translateY(110%);
+    }
+    40.01% {
+       transform: translateY(-100%);
+    }
+    100% {
+       transform: translateY(0);
+    }
+ }
+
+
 
 @media only screen and (max-width: 767.7px){
    .hero {
