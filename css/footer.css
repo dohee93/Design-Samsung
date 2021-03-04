@@ -33,3 +33,58 @@
    font-size: 14px;
    letter-spacing: -1px;
 }
+
+@media only screen and (max-width: 767.7px) {
+   .footer {
+      padding-top: 3.2vw;
+      padding-left: 4%;
+      padding-bottom: 4%;
+   }
+
+   .samsung_logo {
+      width: 17.73333vw;
+      height: 2.8vw;
+      background-image: url(../img/logo_samsung_foot@x2.png);
+   }
+
+   .copyright {
+      font-size: 3.2vw;
+      margin-top: 3.2vw;
+      display: block;
+   }
+
+   .more {
+      display: none;
+   }
+
+   .info {
+      margin-top: 2.93333vw;
+      display: block;
+   }
+
+   .info a {
+      font-size: 2.93333vw;
+   }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+   .footer {
+      padding-top: 1.875vw;
+      padding-left: 3.75%;
+      padding-right: 3.75%;
+      font-size: 1.09375vw;
+   }
+
+   .samsung_logo {
+      width: 7.10938vw;
+      margin-right: 1.09375vw;
+      height: 1.09375vw;
+   }
+
+   .info a {
+      font-size: 1.09375vw;
+   }
+
+}
+
