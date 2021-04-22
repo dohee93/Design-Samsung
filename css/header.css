@@ -1,23 +1,23 @@
 /* Header CSS */
-
 .header_wrap {
-   width: 100%;
-   height: 70px;  
-}
-
-.header_wrap .header {
-   width: 100%;
+   height: 70px;
    position: fixed;
+   width: 100%;
    top: 0;
-   left: 0;
-   z-index: 9999;
-   background-color: rgb(255,255,255);
+   z-index: 99999;
+   background: #fff;
 }
-
-.header_wrap .open-bg{
+}
+.header_wrap #header {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   background: #fff;
+}
+.open-bg{
    position:absolute;
    width:100%;
-   transition:transform .4s 0s cubic-bezier(0.215, 0.61, 0.355, 1);
+   transition:transform .4s .1s cubic-bezier(0.215, 0.61, 0.355, 1);
    top:0;
    background-color:#fff;
 }
@@ -45,6 +45,8 @@
    width: 100%;
    padding : 23px 0 10px;
    text-align: center;
+   transform: scaleX(1);
+   transition: transform .4s;
 }
 
 .slogan {
@@ -139,17 +141,19 @@
 }
 
 .category-area-holder {
-   position: sticky;
-   top: 0;
+   position: relative;
    width: 650px;
    margin: 0 auto;
    padding: 26px 0 0;
    background-color: rgb(255,255,255);
-   z-index: 9999999;
+   z-index: 9999;
+   transition: transform .4s 0s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .category-box {   
    height: 33px;
+   display: flex;
+   justify-content: space-between;
 }
 
 .category-area-holder ul li {
