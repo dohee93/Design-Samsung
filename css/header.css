@@ -81,7 +81,9 @@
    background-image: url(../img/icon_search.png);
    background-repeat: no-repeat;
 }
-
+body.onOpenLang .util_box .lang:after {
+   transform : rotate(180deg);
+}
 .util_box .lang {
    width: 33px;
    display: inline-block;
@@ -111,8 +113,35 @@
    background-position: 0 0;
    background-repeat: no-repeat;
    background-size: 100% auto;
+   transition: transform .3s 0s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+body.onOpenLang .util_box .list {
+   display: block;
+}
+.list {
+   width: 33px;
+   height: 100%;
+   background-color: #fff;
+   display: none;
+   padding: 10px;
+}
+.list > a {
+   display: block;
+   width: 100%;
+}
+.list a:first-child {
+   margin: 14px 0;
+}
+.list a.on {
+   color: #000;
+}
+.list a {
+   color: #555;
+   font-family: 'samsungonelatin700';
+   font-size: 16px;
+   line-height: 1;
+}
 /* Header - Category CSS */
 
 .category-area-holder .category-box li .line {
@@ -178,6 +207,7 @@
    bottom: 0;
    margin: 0 1.25% 1.25% 0;
    z-index: 9999;
+   opacity: 0;
 }
 
 .btn_main_top span {
@@ -201,6 +231,9 @@
    background-repeat: no-repeat;
    background-position: center center;
    background-size: 100% auto;
+}
+.btn_main_top.visible {
+   opacity: 1;
 }
 
 /* .minify .header_wrap .open-bg{
@@ -302,7 +335,7 @@
       padding-top: 100%;
       background-color: rgba(248,248,248,0.8);
    }
-
+   
    .header_wrap .btn_main_top span:before {
       width: 1.06667vw;
       margin-left: -.53333vw;
