@@ -57,7 +57,6 @@ if(docHeight != 'undefined') {
 // 스크롤 이벤트 추가
 window.addEventListener('scroll', function(){
    scrollPos = docElem.scrollTop;
-   console.log(scrollPos);
    if(scrollPos > offset) {
       btt[0].classList.add('visible');
    } else {

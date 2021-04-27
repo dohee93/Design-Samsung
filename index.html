@@ -25,6 +25,8 @@
    <link rel="stylesheet" href="css/footer.css">
 
    <script src="js/index.js" defer></script>
+   <script src="js/searchNav.js" defer></script>
+
 </head>
 <body class="wrap minify">
    <!-- Header Section -->
@@ -38,6 +40,9 @@
             <a href="#" class="logo"></a>
          </div>
          <div class="util_box">
+            <div class="gnb-search">
+               <input id="project-search" onchange="searchProject()">
+            </div>
             <div class="search">
                <a href="#"></a>
             </div>
@@ -53,6 +58,7 @@
                </a>
             </div>
             <a href="#" class="util_menu"></a>
+            
          </div>
          <a href="#header" class="btn_main_top">
             <span></span>
