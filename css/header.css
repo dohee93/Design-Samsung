@@ -244,17 +244,26 @@ body.onOpenLang .util_box .list > a {
 
 .gnb-search { 
    text-align: end; 
-   display: inline-block;
+   display: none;
    position: absolute;
    top: 0;
    right: 100px;
    margin-top: -3px;
 }
+.gnb-search span { 
+   position: absolute;
+   top: 5px;
+   right: 5px;
+   font-family: 'samsungonelatin400';
+   font-size: 14px;
+}
+
 #project-search { 
    width: 200px; 
-   height: 25px; 
-   border-radius: 4px;  
-   border:1px solid rgba(0,0,0,0.4);
+   height: 25px;
+   outline: none; 
+   border: none;
+   border-bottom:1px solid rgba(0,0,0,0.4);
    padding: 0 20px;
 }
 
